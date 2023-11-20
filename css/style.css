@@ -1,0 +1,185 @@
+/* VISTA WEB */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    padding-left: 30px;
+    font-size: 18px;
+    justify-content: space-between;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+}
+
+.select-container {
+    display: flex;
+    right: 40px;
+}
+
+/* LAYOUT INDEX */
+.container {
+    width: 100%;
+    margin-top: 150px;
+}
+.index-container, .curriculum-container,
+.certificados-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-bottom: 5px;
+}
+.curriculum-container {
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.curriculum {
+    height: 300px;
+    border-radius: 5%;
+}
+.card-header {
+    background-color: white;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+#curriculum {
+    margin-top: 20px;
+}
+.img {
+    margin-left: 40px;
+    margin-top: 55px;
+}
+#avatar {
+    max-width: 300px;
+    max-height: 340px;
+    border-radius: 50%;
+}
+h5 {
+    margin-top: 10px;
+}
+.card-body {
+    text-align: justify;
+    max-width: 600px;
+}
+
+/* FOOTER */
+.footer-container {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(36, 61, 85);
+    position: relative;
+    padding-right: 40px;
+}
+.footer-icons {
+    position: relative;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-icons li {
+    list-style: none;
+}
+.icon {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.footer-icons li a {
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 35px;
+    transition: .4s;
+}
+.footer-icons li a:hover {
+    color: yellow;
+    padding: 0;
+    opacity: .4;
+}
+.footer-icons li a:active {
+        color: red;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.footer-right p {
+    margin: 0;
+    padding: 0;
+}
+.footer-right #first {
+    font-size: 12px;
+    font-weight: bold;
+}
+.footer-right #second {
+    font-size: 10px;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        z-index: 0;
+        flex-direction: column;
+    }
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .img {
+        margin-bottom: 40px;
+    }
+    .curriculum  {
+        border-radius: 0;
+    }
+}
+
+@media(max-width: 1000px) {
+    
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 500px;
+        display: flex;
+        margin-top: 20px;
+    }
+    .card-body {
+        width: 100%;
+    }
+    .img {
+        display: flex;
+        margin: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+}

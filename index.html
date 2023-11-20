@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <ul class="nav navbar-nav p-3">
+            <li class="nav-item active ">
+                <a class="nav-link" href="#">Portafolio Web</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Curriculum</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Certificados</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Otras certificaciones</a>
+            </li>
+        </ul>
+        <div class="select-container">
+            <select name="projects" id="projects" class="form-control-sm select">
+                <option value="0">Seleccione Proyecto</option>
+                <option value="1">Otro Portafolio</option>
+                <option value="2">Juego Mokepon</option>
+                <option value="3">Validador Rut Chileno</option>
+                <option value="4">ejercicio renderizado con JQuery</option>
+                <option value="5">Repositorio GitHub</option>
+            </select>
+            <div id="message"></div>
+            <input class="btn btn-success mx-2" type="button" value="Ir" onclick="visitar()">
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- seccion index -->
+        <div class="index-container my-3">
+            
+            <div class="col-md-5 img">
+                <img id="avatar" class="avatar" src="./images/foto-mia_rojo.jpeg" alt="Foto tipo retrato mía con poleron rojo">
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Presentación</h5> 
+                    </div>
+                    <div class="card-body">
+                        Juan Palma Alvarez, estudiante de Programación web orientado al Frontend y al Backend.
+                        skills manejados: HTML, CSS, flexbox, CSS-grid, box model, Mobile-First, Bootstrap, JavaScript Vanilla, JQuery, Ajax, Fetch, Json, Manipulación del DOM, Nodejs, Express, Multer, Bases de datos relacionales, MySQL, SQL básico, PostgreSQL básico, XAMPP, LAMPP, php, Apache2, React básico, Git y GitHub, Sistemas Operativos Windows, Linux Ubuntu, consola de Windows, Terminal de Linux, C# básico, Python Básico, WSL, Virtualizacion de Sistemas Operativos.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- seccion curriculum -->
+        <div class="curriculum-container ">
+            <div class="col-md-5">
+                <div class="card curriculum">
+                    <div class="card-header text-center">
+                        <h4>Curriculum Vitae</h4>
+                    </div>
+                    <div class="card-body m-2 text-center">
+                        Descarga aquí mi Curriculum Vitae
+                        <a id="curriculum" href="https://mega.nz/file/fh8XSKIK#Qgio3-njD38dhMjaU7kvYrz6pQ7AkV0_RvIQ04GDKRM">Curriculum Vitae</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- seccion certificados -->
+        <div class="certificados-container">
+            <div class="grid-container" id="grid-container"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer-container">
+        <ul class="footer-icons">
+
+            <li>
+                <a target="_blank" href="https:///www.facebook.com">
+                    <img class="icon" src="./images/iconfacebook.svg" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https:///www.twitter.com">
+                    <img class="icon" src="./images/icontwitter.svg" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https:///www.instagram.com">
+                    <img class="icon" src="./images/instagram-logo.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https:///www.youtube.com">
+                    <img class="icon" src="./images/iconyoutube.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="footer-right">
+            <p id="first">jpalma76@2023</p>
+            <p id="second">Región Metropolitana - Chile</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/certificados.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    
+</body>
+</html>
