@@ -162,7 +162,18 @@ h5 {
 }
 
 @media(max-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
     
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
     .index-container {
         display: flex;
         flex-direction: column;
